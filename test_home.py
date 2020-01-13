@@ -166,7 +166,8 @@ class TestCase_Resource:
 # 首页继续学习
 class TestCase_KeepLearn:
     def test_keep_learn(self):
-        driver.find_element_by_xpath("//*[@id='app']/div[1]/div/div[4]/div[2]/div[2]").click()
+        ac = driver.find_element_by_xpath("/html/body/div[1]/div[1]/div/div[4]/div[2]/div[2]")
+        ActionChains(driver).move_to_element(ac).click(ac).perform()
         time.sleep(1)
         driver.back()
 
