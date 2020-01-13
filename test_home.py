@@ -163,7 +163,7 @@ class TestCase_Resource:
         driver.back()
 
 
-# 首页继续学习
+# 进入首页继续学习
 class TestCase_KeepLearn:
     def test_keep_learn(self):
         ac = driver.find_element_by_xpath("/html/body/div[1]/div[1]/div/div[4]/div[2]/div[2]")
