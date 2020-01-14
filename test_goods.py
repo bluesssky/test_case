@@ -47,23 +47,23 @@ class TestCase_AllGoods:
         bc = driver.find_element_by_xpath("//*[@id='app']/div[1]/div/div[2]/div[2]/div/div[1]/div[1]")
         ActionChains(driver).move_to_element(bc).click(bc).perform()   # 精选好课
         time.sleep(0.5)
-        # driver.find_element_by_id("tab-menu").click()  # 目录
-        # time.sleep(0.5)
-        # driver.find_element_by_id("tab-about").click()  # 介绍
-        # driver.find_element_by_xpath("/html/body/div[1]/div[1]/div[6]/div[1]/div[1]").click()  # 左下商城
-        # time.sleep(1)
-        # driver.back()
-        # driver.find_element_by_xpath("/html/body/div[1]/div[1]/div[6]/div[1]/div[2]").click()  # 客服
-        # time.sleep(1)
-        # driver.refresh()
+        driver.find_element_by_id("tab-menu").click()  # 目录
+        time.sleep(0.5)
+        driver.find_element_by_id("tab-about").click()  # 介绍
+        driver.find_element_by_xpath("/html/body/div[1]/div[1]/div[6]/div[1]/div[1]").click()  # 左下商城
+        time.sleep(1)
+        driver.back()
+        driver.find_element_by_xpath("/html/body/div[1]/div[1]/div[6]/div[1]/div[2]").click()  # 客服
+        time.sleep(1)
+        driver.refresh()
 
     def test_buy_goods(self):
         driver.find_element_by_xpath("/html/body/div[1]/div[1]/div[6]/div[2]").click()  # 购买
         time.sleep(0.5)
-        # driver.find_element_by_class_name("popup-close").click()
-        # time.sleep(0.5)
-        # driver.find_element_by_xpath("/html/body/div[1]/div[1]/div[6]/div[2]").click()
-        # time.sleep(0.5)
+        driver.find_element_by_class_name("popup-close").click()
+        time.sleep(0.5)
+        driver.find_element_by_xpath("/html/body/div[1]/div[1]/div[6]/div[2]").click()
+        time.sleep(0.5)
         ac = driver.find_element_by_xpath("/html/body/div[1]/div[1]/div[3]/button")
         ActionChains(driver).move_to_element(ac).click(ac).perform()
         time.sleep(0.5)
